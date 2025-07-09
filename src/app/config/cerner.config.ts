@@ -1,7 +1,7 @@
 const isGitHubPages = window.location.hostname.includes('github.io');
-const baseUrl = isGitHubPages 
-  ? `https://${window.location.hostname}${window.location.pathname}`
-  : 'http://localhost:4200/';
+const baseUrl = isGitHubPages
+  ? `https://${window.location.hostname}${window.location.pathname}callback`
+  : 'http://localhost:4200/callback';
 
 export const CernerConfig = {
   applicationId: '6d520da4-5f38-46fd-a4db-181ea8173e20',
