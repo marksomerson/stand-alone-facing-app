@@ -12,6 +12,7 @@ export class AuthService {
       `client_id=${CernerConfig.clientId}&` +
       `redirect_uri=${encodeURIComponent(CernerConfig.redirectUri)}&` +
       `scope=${encodeURIComponent(CernerConfig.scope)}&` +
+      `aud=${encodeURIComponent(CernerConfig.fhirBaseUrl)}&` +
       `state=${this.generateState()}`;
     
     window.location.href = authUrl;
